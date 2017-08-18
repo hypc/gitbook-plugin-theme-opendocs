@@ -1,0 +1,24 @@
+{
+    "name": "gitbook-plugin-theme-opendocs",
+    "description": "gitbook plugin theme opendocs",
+    "version": "0.0.1",
+    "engines": {
+        "gitbook": ">=3.0.0"
+    },
+    "devDependencies": {
+        "less": "2.7.2",
+        "less-plugin-clean-css": "1.5.1",
+        "gitbook-styleguide": "7.9.3"
+    },
+    "scripts": {
+        "prepublish": "./src/build.sh"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hypc/gitbook-plugin-theme-opendocs.git"
+    },
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/hypc/gitbook-plugin-theme-opendocs/issues"
+    }
+}
