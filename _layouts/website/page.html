@@ -19,8 +19,6 @@
     <header class="gb-page-header">
         <div class="container">
         {% block header %}
-            {% block search_input %}{% endblock %}
-
             <a href="{{ "/"|resolveFile }}" class="logo">
                 <img src="{{ "images/logo/64.png"|resolveAsset }}">
                 <h1>{{ config.title }}</h1>
@@ -30,6 +28,8 @@
             <a href="{{ ('/' + glossary.path)|resolveFile }}" class="btn btn-link pull-right hidden-xs">Glossary</a>
             {% endif %}
 
+            <div class="page_search_block">
+            {% block search_input %}{% endblock %}
             {% block header_nav %}
                 {% if page.next and page.next.path %}
                 <a href="{{ page.next.path|resolveFile }}" class="btn btn-link pull-right hidden-xs">
@@ -42,6 +42,7 @@
                 </a>
                 {% endif %}
             {% endblock %}
+            </div>
         {% endblock %}
         </div>
     </header>
