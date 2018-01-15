@@ -20,9 +20,12 @@
                 margin-right: 0px;
                 display: inline-block;
 
+                img {
+                    vertical-align: middle;
+                }
                 h1 {
                     display: inline-block;
-                    vertical-align: 18px;
+                    vertical-align: middle;
                     padding-left: 10px;
                     font-size: 2.5em;
                     margin: 0px;
@@ -46,6 +49,19 @@
                         border: 1px solid #ddd;
                         margin-top: 3px;
                     }
+                }
+            }
+        }
+    }
+
+    .gb-page-body {
+        .container {
+            .list-group .list-group-item {
+                &.active, &:focus, &:hover {
+                    z-index: 2;
+                    color: #3884ff;
+                    background-color: #f1f1f1;
+                    border-color: #ddd;
                 }
             }
         }
