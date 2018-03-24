@@ -34,7 +34,7 @@
 
 {% block book_summary %}
     {% for part in summary.parts %}
-    <div class="panel panel-default">
+    <div class="panel panel-default {% if part.title == '--HIDE--' %}panel-hide{% endif %}">
         {% if part.title %}
         <div class="panel-heading">
             <h3 class="panel-title">{{ part.title }}</h3>
