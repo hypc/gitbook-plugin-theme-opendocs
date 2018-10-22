@@ -1,7 +1,7 @@
 {
     "name": "gitbook-plugin-theme-opendocs",
     "description": "gitbook plugin theme opendocs",
-    "version": "0.0.10",
+    "version": "0.0.11",
     "engines": {
         "gitbook": ">=3.0.0"
     },
